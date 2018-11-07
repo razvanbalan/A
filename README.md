@@ -45,4 +45,8 @@ This file contains the variables needed by the virtualized infrastructure to be 
 Note: To deploy different artefacts like AWS Lambda functions or database structures, the artefacts needs to be generated upfront running the terraform commands. This can be extended using a CI pipeline that generates all the artefacts needed and can be downloaded from S3.  This example provides a simple example on using the artefacts already generated.  
 
 What command should I run to make the magic happend?  
+terraform plan -var-file=endava_cloud.tfvars - this command only shows the deltas between the installed infrastructure 
+
+terraform apply -var-file=endava_cloud.tfvars  - this command will create and configure the services to be production ready.  
+
 
