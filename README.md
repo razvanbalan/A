@@ -32,17 +32,17 @@ There are two main commands provided by terraform: plan and apply. You can visua
 Once you have terraform up & running please proceed with the next steps.  
 
 
-Where do I get the main file?
+Where do I get the main file?  
 https://bitbucket.endava.com/projects/MYI/repos/concordia/browse/terraform
-The repository contains the following files:
+The repository contains the following files:  
 main.tf  
-This file contains the necessary infrastructure software and virtualized that will be created in the destination AWS account. The output of the file will write at the console all the endpoints exposed by the virtualized infrastructure deployed in the target AWS account.
-endava_cloud.tfvars
-This file contains the destination AWS account details. Please see the file comments that provides all the necessary details.  
-vars.tf  
-This file contains the variables needed by the virtualized infrastructure to be configured. Please see the inline description. There are different configurations that can be passed when running the terraform apply command and will override the default ones. If no default value is provided, then a prompt will need the value to be captured from console.  
+This file contains the necessary infrastructure software and virtualized that will be created in the destination AWS account. The output of the file will write at the console all the endpoints exposed by the virtualized infrastructure deployed in the target AWS account.  
+endava_cloud.tfvars  
+This file contains the destination AWS account details. Please see the file comments that provides all the necessary details.   
+vars.tf   
+This file contains the variables needed by the virtualized infrastructure to be configured. Please see the inline description. There are different configurations that can be passed when running the terraform apply command and will override the default ones. If no default value is provided, then a prompt will need the value to be captured from console.   
 
 Note: To deploy different artefacts like AWS Lambda functions or database structures, the artefacts needs to be generated upfront running the terraform commands. This can be extended using a CI pipeline that generates all the artefacts needed and can be downloaded from S3.  This example provides a simple example on using the artefacts already generated.  
 
-What command should I run to make the magic happend?
+What command should I run to make the magic happend?  
 
